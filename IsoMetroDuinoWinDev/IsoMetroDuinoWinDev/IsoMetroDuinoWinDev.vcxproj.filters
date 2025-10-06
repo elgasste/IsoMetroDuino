@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\IsoMetroDuino\game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IsoMetroDuino\input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\IsoMetroDuino\screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win_clock.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win_input.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win_main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win_pixel_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="win_screen.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\IsoMetroDuino\clock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IsoMetroDuino\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IsoMetroDuino\game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IsoMetroDuino\input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\IsoMetroDuino\screen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win_common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win_pixel_buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{2a9b0c47-22c5-4348-9b1b-ab6ac9c720b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{53feffe5-cf04-4533-8420-4829eb5d1fca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
