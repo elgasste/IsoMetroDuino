@@ -138,13 +138,17 @@
     <ClInclude Include="..\..\IsoMetroDuino\input.h" />
     <ClInclude Include="..\..\IsoMetroDuino\screen.h" />
     <ClInclude Include="..\..\IsoMetroDuino\game.h" />
+    <ClInclude Include="..\..\IsoMetroDuino\tile_map.h" />
+    <ClInclude Include="..\..\IsoMetroDuino\vector.h" />
     <ClInclude Include="win_common.h" />
     <ClInclude Include="win_pixel_buffer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\IsoMetroDuino\game.c" />
+    <ClCompile Include="..\..\IsoMetroDuino\game_data.c" />
     <ClCompile Include="..\..\IsoMetroDuino\input.c" />
     <ClCompile Include="..\..\IsoMetroDuino\screen.c" />
+    <ClCompile Include="..\..\IsoMetroDuino\tile_map.c" />
     <ClCompile Include="win_clock.c" />
     <ClCompile Include="win_input.c" />
     <ClCompile Include="win_main.c" />
