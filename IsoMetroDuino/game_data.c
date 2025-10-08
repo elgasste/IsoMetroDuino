@@ -3,7 +3,7 @@
 
 void TileMap_Load( TileMap_t* tileMap, Screen_t* screen )
 {
-   u32 i, j;
+   u32 i, j, ti;
    u8* memory;
    u8 tileColor = 1;
 
@@ -40,5 +40,20 @@ void TileMap_Load( TileMap_t* tileMap, Screen_t* screen )
       memory += 14; for ( j = 0; j < 4; j++ ) { *memory = tileColor; memory++; } memory += 14;
 
       tileColor = ( ( i % 2 ) == 1 ) ? 1 : 2;
+   }
+
+   // TODO: this is just an experimental tile map with alternating colors, and every square is passable
+   tileMap->sizeInTiles.x = 128;
+   tileMap->sizeInTiles.y = 128;
+
+   for ( i = 0; i < tileMap->sizeInTiles.y; i++ )
+   {
+      ti = ( ( i % 2 ) == 0 ) ? 0 : 1;
+
+      for ( j = 0; j < tileMap->sizeInTiles.y; j++ )
+      {
+         tileMap->tiles[( i * tileMap->sizeInTiles.x ) + j] = ( ti == 0 ) ? 0x80 : 0x81;
+         ti = ( ti == 0 ) ? 1 : 0;
+      }
    }
 }

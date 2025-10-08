@@ -8,7 +8,7 @@
 #define TILE_TEXTURE_COUNT    128
 #define TILE_TEXTURE_VOFFSET  8
 
-#define TILEMAP_MAX_TILES     1024
+#define TILEMAP_MAX_TILES     16384    // 128x128 tiles
 
 typedef struct Screen_t Screen_t;
 
@@ -25,16 +25,14 @@ typedef struct TileTextureSet_t
 }
 TileTextureSet_t;
 
-typedef struct Tile_t
-{
-   Bool_t isPassable;
-}
-Tile_t;
-
 typedef struct TileMap_t
 {
    TileTextureSet_t tileTextureSet;
-   Tile_t tiles[TILEMAP_MAX_TILES];
+
+   // bits 0-6: tile texture index
+   // bit 7: is passable
+   // bits 8-31: reserved
+   u32 tiles[TILEMAP_MAX_TILES];
    Vector2u32_t sizeInTiles;
 }
 TileMap_t;
